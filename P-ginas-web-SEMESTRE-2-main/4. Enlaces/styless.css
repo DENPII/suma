@@ -1,0 +1,17 @@
+
+#p1{
+    color: brown;
+    background-color: beige;
+    padding: 12px;
+    margin-top: 20px;
+}
+.paragraph{
+    color: azure;
+    background-color: black;
+    margin-bottom: 45%;
+    padding: 5%;
+}
+h3{
+   text-align: center;
+   color: rgba(34, 34, 243, 0.848);
+}

@@ -1,0 +1,145 @@
+/*
+1. Selector x etiqueta: cambia el estilo a todas las etiquetas en cuestión
+2. Selector por clase: cambia o modifica el estilo del elemento en donde se mencione la class se coloca".class"
+3. selector por id: cambia o modifica el estilo en donde se mencione el id se coloca "#id"
+4. selector universal *
+*/
+/******************************************************************
+
+/*1. Etiqueta*/
+p{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 25px;
+ background-color: #A0D7FA;
+ padding: 3%;
+}
+
+/*****************************************************************
+
+/*2. CLASS*/
+.subtitulo{
+    text-align: center;
+    color: rgb(4, 91, 150);
+    background-color: #c0dcee;
+}
+
+/*********************************************************************************
+
+/*3. ID*/
+#Titulo{
+    text-align: center;
+    background-color: #A0D7FA;
+    padding: 2%;
+    margin: 2%;
+    border: solid black;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/***********************************************************************************
+
+/*4. Selector por atributo*/
+[class]{
+    /*Se aplicará a todos los elementos etiquetas que tengan atributos class*/
+    background-color: #A0D7FA;
+}
+/*Combinadores*/
+a[href]{
+    text-align: center;
+    margin-left: 2%;
+    color: purple;
+}
+/*Se utiliza subfijos*/
+a[href$=".com"]{
+    margin-left: 4%;
+    color: blue;
+}
+/*Se utiliza prefijos*/
+a[class^="as"]{
+    font-size: 25px;
+    color: red;
+}
+/*1. Combinador "Selector hermano siguente"
+Selecciona el elemento que directamente está después del otro
+El elemento seleccionado "div" y el que le sigue "p"*/
+div + p{
+    color: white;
+    background-color: black;
+}
+
+/*2. Combinador "Selector todos hermanos siguientes"
+Selecciona todos los elementos que estén después de un elemento seleccionado
+El elemento seleccionado "div" los que estén después "code"*/
+div ~ code{
+    background-color: yellow;
+
+}
+
+/*3. Agrupación de selectores
+Las comas permiten colocarle un estilo a un grupo de etiquetas, sin importar el tipo de estas es decir que podemos combinar los selectores.
+También funciona con los diferentes atributos agrupandolos.*/
+code, a, h2{
+    font-family: 'Aboreto', cursive;
+}
+
+thead, th{
+    background-color: rgba(140, 234, 255, 0.633);
+}
+h1{
+    text-align: center;
+    background-color:rgba(140, 234, 255, 0.633);
+    height: 90px;
+    width: 45%;
+    margin-left: 27%;
+    border: 10px outset gray;
+    padding-top: 2%;
+}
+/*4. Selector Descendente directo
+Solo afectará a los elementos que estén dentro de otro elemnto, se debe usar el signo mayor.
+El elemento contenedor "ul" y el elemento de contenido "code"*/
+ul > code{
+    text-decoration: underline;
+    font-family: 'DynaPuff', cursive;
+}
+
+
+
+
+
+/*5. Selectores multiples
+Seleccionan cualquier elemento que tenga las caracteristicas dadas*/
+
+/*Selector de descendientes
+Toma todos los elementos que desciende el elemento seleccionado. Este solo necesitará espacio entre ambos elementos
+Elemnto seleccionado "pre" y el elemento que desciende "Table"*/
+pre table{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 7px solid black;
+}
+
+/*Selector todos hermanos siguientes
+Selecciona todos los elementos que estén después de un elemento seleccionado
+El elemento seleccionado "article" los que estén después "h2"*/
+article~h2{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+/*6. Selecotres directos
+Estos especifican un elemnto con las caracteristicas dadas*/
+
+/*Selector Descendente directo
+Solo afectará a los elementos que estén dentro de otro elemnto, se debe usar el signo mayor.
+El elemento contenedor "ul" y el elemento de contenido "pre"*/
+ul > pre{
+    background-color: yellow;
+
+}
+
